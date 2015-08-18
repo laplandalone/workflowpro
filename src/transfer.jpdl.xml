@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="transfer" xmlns="http://jbpm.org/4.4/jpdl">
+   <start g="78,16,92,52" name="start1">
+      <transition to="绾夸笂鐢宠"/>
+   </start>
+   <end name="end1" g="16,264,92,52"/>
+   <state name="绾夸笂鐢宠" g="78,100,92,52">
+      <transition name="鎻愪氦鏁欏姟鐢宠" to="鏁欏姟鐢宠" g="-79,-22"/>
+   </state>
+   <decision name="鏁欏姟鐢宠" g="100,184,48,48">
+      <transition name="鏁欏姟鐢宠鎷掔粷" to="end1" g="-50,-22"/>
+      <transition name="鏁欏姟鐢宠閫氳繃" to="绾夸笅鐢宠" g="-56,-22"/>
+   </decision>
+   <state name="绾夸笅鐢宠" g="140,264,92,52"/>
+   <decision name="绛夌彮" g="202,16,92,52"/>
+   <state name="state1" g="326,16,92,52"/>
+</process>

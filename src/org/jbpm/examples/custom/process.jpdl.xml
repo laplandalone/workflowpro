@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="Custom" xmlns="http://jbpm.org/4.4/jpdl">
+
+<start g="300,72,48,48" name="start1">
+      <transition to="申请"/>
+   </start>
+   <end g="300,468,48,48" name="end1"/>
+   <task assignee="#{owner}" g="276,156,92,52" name="申请" form="request.jsp">
+      <transition g="-71,-17" name="经理审批" to="经理审批"/>
+   </task>
+   <task assignee="manager" g="276,264,92,52" name="经理审批" form="manager.jsp">
+      <transition g="-23,-6" name="批准" to="exclusive1"/>
+      <transition name="驳回" to="申请" g="492,290;493,181:-30,-1"/>
+   </task>
+   <decision expr="#{day > 3 ? '老板审批':'结束'}" g="300,360,48,48" name="exclusive1">
+      <transition g="492,384:-71,-17" name="老板审批" to="老板审批"/>
+      <transition g="-24,-16" name="结束" to="end1"/>
+   </decision>
+   <task assignee="boss" g="444,468,92,52" name="老板审批" form="boss.jsp">
+      <transition g="-22,-15" name="结束" to="end1"/>
+   </task>
+
+</process>
