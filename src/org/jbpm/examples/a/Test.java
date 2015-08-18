@@ -14,7 +14,8 @@ public class Test extends JbpmTestCase
 	        .deploy();
 	  }
 	
-	  protected void tearDown() throws Exception {
+	  protected void tearDown() throws Exception 
+	  {
 //		    repositoryService.deleteDeploymentCascade(deploymentId);
 		    
 //		    super.tearDown();
