@@ -52,7 +52,6 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/oro.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/postgresql.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/report-engine.zip"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-api.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-jdk14.jar"/>
